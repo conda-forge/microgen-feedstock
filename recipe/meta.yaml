@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8,<3.12
-    - numpy
+    - numpy <2
     - vtk
     - pyvista
     - python-gmsh
