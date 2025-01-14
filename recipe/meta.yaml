@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python 3.9
     - pip
   run:
-    - python >={{ python_min }}, <3.13
+    - python >=3.9, <3.13
     - numpy
     - vtk
     - pyvista
@@ -33,7 +33,7 @@ test:
   imports:
     - microgen
   requires:
-    - python {{ python_min }}
+    - python 3.9
     - pytest
   source_files:
     - tests
